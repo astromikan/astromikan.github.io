@@ -79,7 +79,7 @@ div.graphics_container {
     height:120px;
     left: 40px;
     background-color: transparent;
-    content: url("./co.png");
+    content: url("https://github.com/astromikan/astromikan.github.io/blob/main/co.png");
     animation: falling 10s linear infinite;
   }
 
