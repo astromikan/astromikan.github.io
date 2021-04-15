@@ -1,0 +1,123 @@
+body {
+    background: #f0c312;
+    margin: 0px;
+    animation-name: overall;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes overall {
+   0% {background:  #f0c312;}
+    50% {background:rgb(40, 91, 231);}
+    100% {background:  #f0c312;}
+  }
+
+  @font-face {
+    font-family: "Blow";
+    src: url("/Users/cmixon/Documents/GitHub/triptych/blow.ttf");
+    }  
+  
+  div {
+    box-sizing: border-box;
+  }
+
+  @keyframes shadow {
+   0% { text-shadow: 3px 3px  rgb(40, 91, 231);} 
+   50% { text-shadow:  3px 3px  #f0c312;} 
+   100% { text-shadow:  3px 3px rgb(40, 91, 231);}
+  }
+  
+  div.my-custom-div {
+    font-family: "Blow", sans-serif;
+      position: absolute;
+      color: rgb(159, 96, 221);
+      text-align: center;
+      width: 100%;
+      top: 25%;
+      text-shadow: 3px 3px  rgb(40, 91, 231) ;
+      font-weight: 300;
+      font-size: 60px;
+      animation-name: shadow;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+  }
+
+  @keyframes falling {
+    0% 
+    { top: -70%;}
+    100%
+    {
+      top: 120%;
+    }
+    from { -webkit-transform: rotateY(-360deg);    }
+  to   { -webkit-transform: rotateY(0deg); }
+  from { -webkit-transform: rotateZ(-360deg);    }
+  to   { -webkit-transform: rotateZ(0deg); }
+}
+
+@keyframes spinner {
+  0% 
+  { top: -70%;}
+  100%
+  {
+    top: 120%;
+  }
+  from { -webkit-transform: rotateY(0deg);    }
+  to   { -webkit-transform: rotateY(-360deg); }
+}
+
+div.graphics_container {
+
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+  div.banana {
+    position: absolute ;
+    width: 120px;
+    height:120px;
+    left: 40px;
+    background-color: transparent;
+    content: url("/Users/cmixon/Documents/GitHub/astromikan.github.io/co.png");
+    animation: falling 10s linear infinite;
+  }
+
+  div.wild {
+    position: absolute ;
+    width: 120px;
+    height:150px;
+    left: 540px;
+    background-color: transparent;
+    content: url("/Users/cmixon/Documents/GitHub/astromikan.github.io/co.png");
+    animation: spinner 15s linear infinite;
+  }
+
+  div.holdingcandles {
+    display: inline-block;
+    /* background: linear-gradient(180deg,#ff8a00,#e52e71); */
+    background: transparent;
+    height: 200px;
+    width: 200px;
+    font-size: 1px;
+    padding: 1px;
+    content: url("/Users/cmixon/Documents/GitHub/astromikan.github.io/PHC2.png");
+    margin-right: 5px;
+    margin-left: 5px;
+    animation: skew 3s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    opacity: .7;
+  }
+
+  @keyframes skew {
+    0% {
+      transform: skew(20deg, 20deg);
+    }
+    100% {
+      transform: skew(-20deg, -20deg);
+    }
+  }
+  
+  
+  
