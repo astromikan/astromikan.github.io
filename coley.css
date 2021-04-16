@@ -79,8 +79,18 @@ div.graphics_container {
     height:120px;
     left: 40px;
     background-color: transparent;
-    content: url("https://github.com/astromikan/astromikan.github.io/blob/main/co.png");
+    content: url("./co.png");
     animation: falling 10s linear infinite;
+  }
+
+  div.rainbow {
+    position: absolute ;
+    width: 120px;
+    height:120px;
+    left: 840px;
+    background-color: transparent;
+    content: url("./co.png");
+    animation: falling 7s linear infinite;
   }
 
   div.wild {
@@ -89,7 +99,7 @@ div.graphics_container {
     height:150px;
     left: 540px;
     background-color: transparent;
-    content: url("/Users/cmixon/Documents/GitHub/astromikan.github.io/co.png");
+    content: url("./co.png");
     animation: spinner 15s linear infinite;
   }
 
@@ -101,7 +111,7 @@ div.graphics_container {
     width: 200px;
     font-size: 1px;
     padding: 1px;
-    content: url("/Users/cmixon/Documents/GitHub/astromikan.github.io/PHC2.png");
+    content: url("./PHC2.png");
     margin-right: 5px;
     margin-left: 5px;
     animation: skew 3s infinite;
